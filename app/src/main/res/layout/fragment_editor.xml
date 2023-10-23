@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applicationBackgroundColor"
+    tools:context=".ui.fragments.EditorFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@drawable/bg_button"
+        android:scaleType="center"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@drawable/bg_button"
+        android:scaleType="center"
+        android:src="@drawable/ic_visibility"
+        app:layout_constraintEnd_toStartOf="@id/ivSave"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@drawable/bg_button"
+        android:scaleType="center"
+        android:src="@drawable/ic_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@null"
+        android:hint="@string/title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:textSize="@dimen/_48sp"
+        app:layout_constraintTop_toBottomOf="@id/ivBtnBack" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvNoteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/type_something"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintColor"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
